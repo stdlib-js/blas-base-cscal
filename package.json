@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-base-cscal",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Scale a single-precision complex floating-point vector by a single-precision complex floating-point constant.",
   "license": "Apache-2.0",
   "author": {
@@ -43,7 +43,7 @@
   "dependencies": {
     "@stdlib/assert-is-error": "^0.2.1",
     "@stdlib/blas-base-shared": "^0.0.1",
-    "@stdlib/complex-float32-ctor": "github:stdlib-js/complex-float32-ctor#main",
+    "@stdlib/complex-float32-ctor": "^0.0.1",
     "@stdlib/math-base-ops-cmulf": "^0.2.1",
     "@stdlib/napi-argv": "^0.2.1",
     "@stdlib/napi-argv-complex64": "^0.0.1",
