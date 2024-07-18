@@ -43,8 +43,8 @@
   "dependencies": {
     "@stdlib/assert-is-error": "^0.2.1",
     "@stdlib/blas-base-shared": "^0.0.1",
+    "@stdlib/complex-float32-base-mul": "github:stdlib-js/complex-float32-base-mul#main",
     "@stdlib/complex-float32-ctor": "^0.0.1",
-    "@stdlib/math-base-ops-cmulf": "^0.2.1",
     "@stdlib/napi-argv": "^0.2.1",
     "@stdlib/napi-argv-complex64": "^0.0.1",
     "@stdlib/napi-argv-int64": "^0.2.1",
