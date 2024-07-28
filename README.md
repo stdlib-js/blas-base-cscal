@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+cscal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-cscal/tags). For example,
+
+```javascript
 cscal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@v0.0.2-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var cscal = require( 'path/to/vendor/umd/blas-base-cscal/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@v0.0.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -236,7 +241,7 @@ var im = imagf( z );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@v0.0.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
