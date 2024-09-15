@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-01)
+## Unreleased (2024-09-15)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`00390b7`](https://github.com/stdlib-js/stdlib/commit/00390b7f27c421251760c78f75697fbf1e3449df) - add missing method in declaration tests [(#2900)](https://github.com/stdlib-js/stdlib/pull/2900)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`00390b7`](https://github.com/stdlib-js/stdlib/commit/00390b7f27c421251760c78f75697fbf1e3449df) - **fix:** add missing method in declaration tests [(#2900)](https://github.com/stdlib-js/stdlib/pull/2900) _(by Muhammad Haris)_
 -   [`308005e`](https://github.com/stdlib-js/stdlib/commit/308005e8a9cf48917f0c68451bd05f7d6fb06ba4) - **bench:** adjust sample values to prevent overflow _(by Athan Reines)_
 
 </details>
@@ -24,9 +35,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Muhammad Haris
 
 </section>
 
