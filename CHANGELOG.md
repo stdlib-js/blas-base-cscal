@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-02)
+## Unreleased (2024-10-25)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`9aafd79`](https://github.com/stdlib-js/stdlib/commit/9aafd79e3f560b96d724aeade6fdaf2a72defe2a) - **docs:** fix example _(by Athan Reines)_
 -   [`fc1256b`](https://github.com/stdlib-js/stdlib/commit/fc1256b1cb1736d9669b986c03ceb29a77228ec8) - **feat:** update JavaScript implementation and add C `ndarray` implementation for `blas/base/cscal` [(#2967)](https://github.com/stdlib-js/stdlib/pull/2967) _(by Aman Bhansali, Athan Reines)_
 -   [`08f9c1a`](https://github.com/stdlib-js/stdlib/commit/08f9c1af6dee1cc36cda84b10230500e75d53ff5) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`00390b7`](https://github.com/stdlib-js/stdlib/commit/00390b7f27c421251760c78f75697fbf1e3449df) - **fix:** add missing method in declaration tests [(#2900)](https://github.com/stdlib-js/stdlib/pull/2900) _(by Muhammad Haris)_
