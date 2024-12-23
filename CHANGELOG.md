@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2024-12-23)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`6a0d6b8`](https://github.com/stdlib-js/stdlib/commit/6a0d6b861f8e2079a501ca4e46a9175440eedb46) - **style:** update to use tabs for indentation _(by Philipp Burckhardt)_
 -   [`a7dd0cf`](https://github.com/stdlib-js/stdlib/commit/a7dd0cf36e8ff747083aff3aa4bfff4bf01dfd0c) - **style:** fix spacing _(by Athan Reines)_
 -   [`9aafd79`](https://github.com/stdlib-js/stdlib/commit/9aafd79e3f560b96d724aeade6fdaf2a72defe2a) - **docs:** fix example _(by Athan Reines)_
 -   [`fc1256b`](https://github.com/stdlib-js/stdlib/commit/fc1256b1cb1736d9669b986c03ceb29a77228ec8) - **feat:** update JavaScript implementation and add C `ndarray` implementation for `blas/base/cscal` [(#2967)](https://github.com/stdlib-js/stdlib/pull/2967) _(by Aman Bhansali, Athan Reines)_
