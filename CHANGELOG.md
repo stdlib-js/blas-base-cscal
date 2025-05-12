@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-10)
+## Unreleased (2025-05-12)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`48f82a2`](https://github.com/stdlib-js/stdlib/commit/48f82a28d92c8fb065770860b65e1377a00a6e3b) - **docs:** update examples for `blas/base/cscal` [(#4942)](https://github.com/stdlib-js/stdlib/pull/4942) _(by Gururaj Gurram)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`6a0d6b8`](https://github.com/stdlib-js/stdlib/commit/6a0d6b861f8e2079a501ca4e46a9175440eedb46) - **style:** update to use tabs for indentation _(by Philipp Burckhardt)_
