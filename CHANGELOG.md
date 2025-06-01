@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-12)
+## Unreleased (2025-06-01)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`294bab1`](https://github.com/stdlib-js/stdlib/commit/294bab1d4a1be1c46251730463ed3730af48e5cc) - **docs:** change variable naming in `blas/base/cscal` [(#6881)](https://github.com/stdlib-js/stdlib/pull/6881) _(by Shabareesh Shetty, Athan Reines)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`48f82a2`](https://github.com/stdlib-js/stdlib/commit/48f82a28d92c8fb065770860b65e1377a00a6e3b) - **docs:** update examples for `blas/base/cscal` [(#4942)](https://github.com/stdlib-js/stdlib/pull/4942) _(by Gururaj Gurram)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
@@ -53,13 +54,14 @@
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
 -   Gururaj Gurram
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Shabareesh Shetty
 
 </section>
 
