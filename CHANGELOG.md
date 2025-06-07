@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-01)
+## Unreleased (2025-06-07)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`51bf6f9`](https://github.com/stdlib-js/stdlib/commit/51bf6f9d2bb027aacecda87e02f957badbc246b0) - **bench:** fix formatting _(by Athan Reines)_
 -   [`294bab1`](https://github.com/stdlib-js/stdlib/commit/294bab1d4a1be1c46251730463ed3730af48e5cc) - **docs:** change variable naming in `blas/base/cscal` [(#6881)](https://github.com/stdlib-js/stdlib/pull/6881) _(by Shabareesh Shetty, Athan Reines)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`48f82a2`](https://github.com/stdlib-js/stdlib/commit/48f82a28d92c8fb065770860b65e1377a00a6e3b) - **docs:** update examples for `blas/base/cscal` [(#4942)](https://github.com/stdlib-js/stdlib/pull/4942) _(by Gururaj Gurram)_
