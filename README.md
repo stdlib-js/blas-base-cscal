@@ -35,32 +35,38 @@ limitations under the License.
 
 > Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/blas-base-cscal
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var cscal = require( '@stdlib/blas-base-cscal' );
+cscal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var cscal = require( 'path/to/vendor/umd/blas-base-cscal/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.cscal;
+})();
+</script>
 ```
 
 #### cscal( N, alpha, x, strideX )
@@ -173,11 +179,16 @@ cscal.ndarray( 2, alpha, x, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var cscal = require( '@stdlib/blas-base-cscal' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 function rand() {
     return new Complex64( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
@@ -192,6 +203,11 @@ console.log( alpha.toString() );
 // Scale elements from `x` by `alpha`:
 cscal( x.length, alpha, x, 1 );
 console.log( x.get( x.length-1 ).toString() );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -200,140 +216,7 @@ console.log( x.get( x.length-1 ).toString() );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/blas/base/cscal.h"
-```
-
-#### c_cscal( N, alpha, \*X, strideX )
-
-Scales values from `X` by `alpha`.
-
-```c
-#include "stdlib/complex/float32/ctor.h"
-
-float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
-
-c_cscal( 4, alpha, (void *)x, 1 );
-```
-
-The function accepts the following arguments:
-
--   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **alpha**: `[in] stdlib_complex64_t` scalar constant.
--   **X**: `[inout] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
-
-```c
-void c_cscal( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX );
-```
-
-#### c_cscal_ndarray( N, alpha, \*X, strideX, offsetX )
-
-Scales values from `X` by `alpha` using alternative indexing semantics.
-
-```c
-#include "stdlib/complex/float32/ctor.h"
-
-float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
-
-c_cscal_ndarray( 4, alpha, (void *)x, 1, 0 );
-```
-
-The function accepts the following arguments:
-
--   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **alpha**: `[in] stdlib_complex64_t` scalar constant.
--   **X**: `[inout] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
-
-```c
-void c_cscal_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/blas/base/cscal.h"
-#include "stdlib/complex/float32/ctor.h"
-#include <stdio.h>
-
-int main( void ) {
-    // Create a strided array of interleaved real and imaginary components:
-    float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-
-    // Create a complex scalar:
-    const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
-
-    // Specify the number of elements:
-    const int N = 4;
-
-    // Specify stride length:
-    const int strideX = 1;
-
-    // Scale the elements of the array:
-    c_cscal( N, alpha, (void *)x, strideX );
-
-    // Print the result:
-    for ( int i = 0; i < N; i++ ) {
-        printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
-    }
-
-    // Scale the elements of the array:
-    c_cscal_ndarray( N, alpha, (void *)x, -strideX, 3 );
-
-    // Print the result:
-    for ( int i = 0; i < N; i++ ) {
-        printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -421,9 +304,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
 
-[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor/tree/umd
 
 </section>
 
