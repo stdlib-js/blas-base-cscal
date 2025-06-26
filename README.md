@@ -317,7 +317,7 @@ int main( void ) {
         printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
     }
 
-    // Scale the elements of the array:
+    // Scale the elements of the array using alternative indexing semantics:
     c_cscal_ndarray( N, alpha, (void *)x, -strideX, 3 );
 
     // Print the result:
