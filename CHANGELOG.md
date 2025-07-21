@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-26)
+## Unreleased (2025-07-21)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`a9776fd`](https://github.com/stdlib-js/stdlib/commit/a9776fdca0331c293eade49bd195836fbb434999) - **refactor:** update include header guards for single precision complex packages [(#7708)](https://github.com/stdlib-js/stdlib/pull/7708) _(by Shabareesh Shetty)_
 -   [`69ad0f3`](https://github.com/stdlib-js/stdlib/commit/69ad0f330677990bab1fe157e167998d94a58eea) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`7c9afed`](https://github.com/stdlib-js/stdlib/commit/7c9afed6a288c9e7d3048dfa0ac8f085759d73f4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`6279e52`](https://github.com/stdlib-js/stdlib/commit/6279e527265742e1630811edb2b633f1f88b7e67) - **bench:** fix overflow _(by Athan Reines)_
