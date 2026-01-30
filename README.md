@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@deno/mod.js';
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@v0.1.0-deno/mod.js';
 ```
 
 #### cscal( N, alpha, x, strideX )
@@ -159,7 +159,7 @@ cscal.ndarray( 2, alpha, x, 2, 1 );
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
-import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@deno/mod.js';
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cscal@v0.1.0-deno/mod.js';
 
 function rand() {
     return new Complex64( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
