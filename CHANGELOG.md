@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-04)
+## Unreleased (2026-05-27)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`7d90009`](https://github.com/stdlib-js/stdlib/commit/7d900094623c7f16cd5cabc1c50e27135a8d4691) - import `src` utility and fix description in `blas/base/cscal` [(#12315)](https://github.com/stdlib-js/stdlib/pull/12315)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`7d90009`](https://github.com/stdlib-js/stdlib/commit/7d900094623c7f16cd5cabc1c50e27135a8d4691) - **fix:** import `src` utility and fix description in `blas/base/cscal` [(#12315)](https://github.com/stdlib-js/stdlib/pull/12315) _(by Kaustubh Patange, Athan Reines)_
 -   [`dd728e2`](https://github.com/stdlib-js/stdlib/commit/dd728e2944ff7318d68b89e9e8c33d9e84d94e7e) - **bench:** refactor to use string interpolation in `blas/base/cscal` [(#10308)](https://github.com/stdlib-js/stdlib/pull/10308) _(by Bhargav Dabhade)_
 
 </details>
@@ -24,9 +35,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Bhargav Dabhade
+-   Kaustubh Patange
 
 </section>
 
